@@ -1,12 +1,8 @@
-
 # coding: utf-8
-
 from hashlib import sha256
 import json
 import time
-
-from flask import Flask, request
-import requests
+from application.blockchain import blockchain
 
 
 class Block:
@@ -114,5 +110,3 @@ class Blockchain:
 
         self.unconfirmed_transactions = []
         return new_block.index
-
-blockchain = Blockchain()

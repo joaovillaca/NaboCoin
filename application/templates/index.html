@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NaboCoin</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+	<div class = "login-container">
+		<a href = "/" class = "left">Home</a>
+		<a href = "/buy" class = "left">Comprar NaboCoin</a>
+		<a href = "/register" class = "right">Cadastro</a>
+		<a href = "/login" class = "right">Login</a>
+		<h1>Bem vindo à webpage do NaboCoin!</h1>
+	</div>
+	<center>
+	<h2>{{ message }}</h2>
+	<br>
+	{{ action }}
+	</center>
+
+</body>
+</html>
