@@ -1,5 +1,4 @@
 from flask import Flask
-
 app = Flask(__name__)
 
 # secret key generated using python3 CLI interpreter
