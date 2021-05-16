@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[39]:
-
-
 from hashlib import sha256
 import json
 import time
@@ -118,26 +115,4 @@ class Blockchain:
         self.unconfirmed_transactions = []
         return new_block.index
 
-
-app = Flask(__name__)
 blockchain = Blockchain()
-
-
-# In[41]:
-
-
-@app.route('/chain', methods=['GET'])
-def get_chain():
-    chain_data = []
-    for block in blockchain.chain:
-        chain_data.append(block.__dict__)
-    return json.dumps({"length": len(chain_data),
-                       "chain": chain_data})
-
-
-# In[45]:
-
-
-
-app.run(debug=True, port=5000)
-
