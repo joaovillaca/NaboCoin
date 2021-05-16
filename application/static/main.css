@@ -32,6 +32,12 @@ h1{
 	margin: 0;
 }
 
-
-
-
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: darkkhaki;
+	color: black;
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
