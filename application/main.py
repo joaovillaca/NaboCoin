@@ -14,7 +14,7 @@ def get_chain():
 
 @app.route('/')
 def home():
-    message = "Últimos blocos da blockchain:"
+    message = "Últimos blocos da Nabocoin:"
     action = get_chain()
     return render_template('index.html',action=action,message=message)
 
