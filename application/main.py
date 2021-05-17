@@ -1,7 +1,11 @@
 from flask import render_template
-import json
+from flask.helpers import flash
+from flask.wrappers import Request
+from werkzeug.wrappers import UserAgentMixin
 from application import app
 from application.blockchain import blockchain
+from application.forms import RegistrationForm
+import json
 
 @app.route('/chain', methods=['GET'])
 def get_chain():
@@ -11,31 +15,32 @@ def get_chain():
     return json.dumps({"length": len(chain_data),
                        "chain": chain_data})
 
-
 @app.route('/')
 def home():
     message = "Últimos blocos da Nabocoin:"
     action = get_chain()
     return render_template('index.html',action=action,message=message)
 
-
 @app.route('/buy')
 def comprar():
     action ="Comprar"
-    return render_template('index.html',action=action)
-
+    return render_template('index.html', action=action)
 
 @app.route('/login')
 def login():
     action ="Login"
     return render_template('index.html',action=action)
 
-
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     action ="Cadastro"
-    return render_template('index.html',action=action)
-
+    form = RegistrationForm()
+    if Request.method == 'POST' and form.validate():
+        user = UserAgentMixin(form.username.data, form.email.data,
+                    form.password.data)
+        flash('Thanks for registering' + ' ' + user)
+        return redirect(url_for('login'))
+    return render_template('register.html', action=action, form=form)
 
 # secret key generated using python3 CLI interpreter
 # used to protect the application against cross-site scripting (also knows as XSS) and cookie modificcation
