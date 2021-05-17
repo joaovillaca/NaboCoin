@@ -41,24 +41,26 @@
 		.button1:hover {
 			background-color: darkkhaki;
 			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 		.button2:hover {
 			background-color: darkslategray;
 			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 	</style>
-	<footer class="footer footer"><center><p>Nabocoin é o Blockchain-as-a-service mais simples que existe!</p></center></footer>
+	<footer class="footer footer"><center><p style="font-family: Arial">Nabocoin é o Blockchain-as-a-service mais simples que existe!</p></center></footer>
 </head>
 <body>
 	<div class = "login-container">
-		<button href = "/" class = "button button2 left">Home</button>
-		<button href = "/buy" class = "button button1 left">Adquirir Nabocoins</button>
-		<button class="button button1 right" href = "/register">Cadastro</button>
-		<button class="button button2 right" href = "/login">Login</button>
-		<center><h1>Bem vindo à webpage da Nabocoin!</h1></center>
+		<a style="font-family: Arial" href = "/" class = "button button2 left">Home</a>
+		<a style="font-family: Arial" href = "/buy" class = "button button1 left">Adquirir Nabocoins</a>
+		<a style="font-family: Arial" class="button button1 right" href = "/register">Cadastro</a>
+		<a style="font-family: Arial" class="button button2 right" href = "/login">Login</a>
+		<center><h1 style="font-family: Arial">Bem vindo à webpage da Nabocoin!</h1></center>
 	</div>
 	<center>
-	<h2>{{ message }}</h2>
+	<h2 style="font-family: Arial">{{ message }}</h2>
 	<br>
 	{{ action }}
 	</center>
