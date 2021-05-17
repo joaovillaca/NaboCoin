@@ -13,6 +13,7 @@
 			position:absolute;
 			bottom:0;
 			width:100%;
+			border: 4px solid black;
 		}
 	
 		.button {
@@ -33,23 +34,42 @@
 			color: black; 
 			border: 4px solid darkkhaki;
 		}
-		.button2 {
-			background-color: white;
-			color: black; 
-			border: 4px solid darkslategray;
-		}
 		.button1:hover {
 			background-color: darkkhaki;
 			color: white;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.button2 {
+			background-color: white;
+			color: black; 
+			border: 4px solid darkslategray;
 		}
 		.button2:hover {
 			background-color: darkslategray;
 			color: white;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
+		.button3 {
+			background-color: darkkhaki;
+			color: black; 
+			padding: 7px 16px;
+			font-size: 16px;
+			margin: 4px 2px;
+		}
+		.button3:hover {
+			background-color: darkkhaki;
+			color: white;
+			padding: 7px 16px;
+			font-size: 16px;
+		}
 	</style>
-	<footer class="footer footer"><center><p style="font-family: Arial">Nabocoin é o Blockchain-as-a-service mais simples que existe!</p></center></footer>
+	<footer class="footer footer"><center>
+			<a class = "button button3 left" href="">Github</a>
+			<a class = "button button3 right" href="">Contato</a>
+		<p style="font-family: Arial">Nabocoin é o Blockchain-as-a-service mais simples que existe!</p>
+		<p class="copyright" style="font-family: Arial">Nabocoin © 2021</p>
+		
+	</center></footer>
 </head>
 <body>
 	<div class = "login-container">
