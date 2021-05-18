@@ -1,7 +1,7 @@
 # Nabocoin
 ## O Blockchain-as-a-service mais simples que existe
 
-![Nabocoin](https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png)
+<span style="display:block;text-align:center">![Nabocoin](https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png)</span>
 
 >Blockchain PoW (Proof-of-Work) simples
 
