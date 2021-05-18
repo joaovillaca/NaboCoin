@@ -2,9 +2,9 @@
 <h2 align="center">O Blockchain-as-a-service mais simples que existe</h2>
 
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png" />
-</p>
+</div>
 
 >Blockchain PoW (Proof-of-Work) simples
 
