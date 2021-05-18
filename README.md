@@ -3,7 +3,7 @@
 
 
 <div align="center">
-  <img src="https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png" width="400px" height="400px">
+  <img src="https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png" width="350px" height="350px">
 </div>
 
 >Blockchain PoW (Proof-of-Work) simples
