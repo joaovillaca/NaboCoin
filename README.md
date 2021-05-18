@@ -1,5 +1,5 @@
-<h1 align="center"> # Nabocoin </h1>
-## O Blockchain-as-a-service mais simples que existe
+<h1 align="center">Nabocoin</h1>
+<h2 align="center">O Blockchain-as-a-service mais simples que existe</h2>
 
 
 <p align="center">
