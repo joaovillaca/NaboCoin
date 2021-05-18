@@ -19,17 +19,18 @@ def get_chain():
 def home():
     message = "Últimos blocos da Nabocoin:"
     action = get_chain()
-    return render_template('index.html',action=action,message=message)
+    return render_template('index.html', action=action, message=message)
 
 @app.route('/buy')
 def comprar():
+    message = "Compre Nabocoins!"
     action ="Comprar"
-    return render_template('index.html', action=action)
+    return render_template('index.html', action=action, message=message)
 
 @app.route('/login')
 def login():
     action ="Login"
-    return render_template('index.html',action=action)
+    return render_template('index.html', action=action)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -40,7 +41,7 @@ def register():
                     form.password.data)
         flash('Thanks for registering' + ' ' + user)
         return redirect(url_for('login'))
-    return render_template('register.html', action=action, form=form)
+    return render_template('forms.html', action=action, form=form)
 
 # secret key generated using python3 CLI interpreter
 # used to protect the application against cross-site scripting (also knows as XSS) and cookie modificcation

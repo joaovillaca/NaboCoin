@@ -8,4 +8,5 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('password', validators = [DataRequired()], description ='Senha:', render_kw={"class": "form-control"})
     confirm = PasswordField('confirm', validators = [DataRequired(), EqualTo('password')],
         description='Confirme a senha:', render_kw={"class": "form-control", "oninput" : "verificaSenha()"})
-    accept_tos = BooleanField('accept_tos', validators = [DataRequired(), InputRequired()],  description='Aceito os termos de serviço')
+    accept_tos = BooleanField('accept_tos', validators = [DataRequired(), InputRequired()],  description='Aceito os termos de serviço', 
+        render_kw={"type": "checkbox"})

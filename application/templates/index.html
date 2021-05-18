@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>NaboCoin</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" href="../static/main.css">
 	
 	<style type="text/css">
 		.footer {
@@ -31,7 +31,7 @@
 		
 		.button1 {
 			background-color: white;
-			color: black; 
+			color: darkkhaki; 
 			border: 4px solid darkkhaki;
 		}
 		.button1:hover {
@@ -41,7 +41,7 @@
 		}
 		.button2 {
 			background-color: white;
-			color: black; 
+			color: darkslategray; 
 			border: 4px solid darkslategray;
 		}
 		.button2:hover {
@@ -75,8 +75,8 @@
 	<div class = "login-container">
 		<a style="font-family: Arial" href = "/" class = "button button2 left">Home</a>
 		<a style="font-family: Arial" href = "/buy" class = "button button1 left">Adquirir Nabocoins</a>
-		<img class="left" src="static/img/icon.png" alt="Nabinho, o mascote da Nabocoin" width="80"
-        height="80">
+		<img class="left" src="static/img/icon.png" alt="Nabinho, o mascote da Nabocoin" width="62"
+        height="62">
 		<a style="font-family: Arial" class="button button1 right" href = "/register">Cadastro</a>
 		<a style="font-family: Arial" class="button button2 right" href = "/login">Login</a>
 		<center><h1 style="font-family: Arial">Bem vindo à webpage da Nabocoin!</h1></center>
@@ -84,7 +84,7 @@
 	<center>
 	<h2 style="font-family: Arial">{{ message }}</h2>
 	<br>
-	<h3 style="font-family: Arial">{{ action }}</h3>
+	<p style="font-family: Arial">{{ action }}</p>
 	</center>
 
 </body>
