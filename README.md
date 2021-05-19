@@ -11,7 +11,7 @@
 </div>
 <br>
 Para testar o app em localhost:5000 basta executar o comando no repositório:
-
+<br>
 ```bash
     $ python run.py
 ```
