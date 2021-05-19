@@ -5,11 +5,11 @@
 <div align="center">
   <img src="https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png" width="350px" height="350px">
 </div>
-
+<br>
 <div align="center">
 >Blockchain PoW (Proof-of-Work) simples
 </div>
-
+<br>
 Para testar o app em localhost:5000 basta executar o comando no repositório:
 
 ```bash
