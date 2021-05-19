@@ -112,9 +112,4 @@ form .button input:hover{
     .user-details::-webkit-scrollbar{
         width: 0;
     }
-    @media(max-width: 459px){
-        .container .content .category{
-          flex-direction: column;
-        }
-    }
 }
