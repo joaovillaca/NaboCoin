@@ -10,6 +10,7 @@
 >Blockchain PoW (Proof-of-Work) simples
 </div>
 <br>
+
 Para testar o app em localhost:5000 basta executar o comando no repositório:
 ```bash
     $ python run.py
