@@ -1,4 +1,3 @@
-from flask.wrappers import JSONMixin
 from application import app
 from application.blockchain import blockchain
 from flask import render_template, redirect, url_for, request, session, flash

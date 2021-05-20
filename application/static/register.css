@@ -7,11 +7,19 @@
 }
 
 body{
-    display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background:  linear-gradient(135deg, darkslategray, darkkhaki);
+    background:  linear-gradient(-45deg, rgb(166,183,51), rgb(240,227,214));
+}
+
+.left-upper-img{
+    text-align: "right";
+}
+
+.parent {
+    display: grid;
+    place-items: center;
 }
 
 .container{
@@ -35,7 +43,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background: linear-gradient(135deg, darkslategray, darkkhaki);
+    /* background: linear-gradient(135deg, rgb(166,183,51), rgb(240,227,214)); */
 }
 
 .container form .user-details{
@@ -75,14 +83,15 @@ form .user-details .input-box{
 
 form .button{
     height: 45px;
-    margin: 45px 0;
+    margin: 0px;
     outline: none;
-    background: linear-gradient(135deg, darkslategray, darkkhaki);
+    /* background: linear-gradient(135deg, rgb(166,183,51), rgb(240,227,214)); */
+    background: rgb(166,183,51);
 }
 
 form .button input{
     height: 100%;
-    margin: 100%;
+    margin: 0;
     outline: none;
     color: #fff;
     border: none;
@@ -90,11 +99,13 @@ form .button input{
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, darkslategray, darkkhaki);
+    /* background: linear-gradient(135deg, rgb(166,183,51), rgb(240,227,214)); */
+    background: rgb(166,183,51);
 }
 
 form .button input:hover{
-    background: linear-gradient(-135deg, darkslategray, darkkhaki);
+    /* background: linear-gradient(-135deg, rgb(166,183,51), rgb(240,227,214)); */
+    background: rgb(125,139,66);
 }
 
 @media (max-width: 584px){
