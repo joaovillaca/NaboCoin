@@ -10,7 +10,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background:  linear-gradient(-45deg, rgb(166,183,51), rgb(240,227,214));
+    background:  linear-gradient(-45deg, #a6b733, #CFCF8D);
 }
 
 .left-upper-img{
