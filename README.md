@@ -17,6 +17,7 @@ Para criar um ambiente virtual para testar o aplicativo, execute o comando:
     $ python -m venv venv
 ```
 Depois crie a variável de ambiente FLASK_APP para que o Flask inicialize o app:
+
 (Linux/Bash):
 ```bash
     ~$ export FLASK_APP=run
