@@ -1,43 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>NaboCoin</title>
-	<link rel="stylesheet" href="../static/main.css">
-	<footer class="footer footer"><center>
-			<a class = "button button3 left" href="">Github</a>
-			<a class = "button button3 right" href="">Contato</a>
-		<p style="font-family: Arial">Nabocoin é o Blockchain-as-a-service mais simples que existe!</p>
-		<p class="copyright" style="font-family: Arial">Nabocoin © 2021</p>
-	</center></footer>
-</head>
-
-<body>
-	<div class = "login-container">
-		<a style="font-family: Arial" href = "/" class = "button button2 left">Home</a>
-		<a style="font-family: Arial" href = "/buy" class = "button button1 left">Adquirir Nabocoins</a>
-        <img class="left" src="static/img/icon.png" alt="Nabinho, o mascote da Nabocoin" width="62"
-        height="62">
-		<a style="font-family: Arial" class="button button1 right" href = "/register">Cadastro</a>
-		<a style="font-family: Arial" class="button button2 right" href = "/login">Login</a>
-		<center><h1 style="font-family: Arial">Bem vindo à webpage da Nabocoin!</h1></center>
-	</div>
-	<center>
-	<h2 style="font-family: Arial">{{ message }}</h2>
-	<br>
-	<h3 style="font-family: Arial">{{ action }}</h3>
-    <form method=post>
-        {% from "_formhelpers.html" import render_field %}
-    <dl>
-        {{ render_field(form.username) }}
-        {{ render_field(form.email) }}
-        {{ render_field(form.password) }}
-        {{ render_field(form.confirm) }}
-        {{ render_field(form.accept_tos) }}
-    </dl>
-	teste
-    <input style="font-family: Arial" type=submit value="Me cadastre!">
-    </form>
-	</center>
-
-</body>
-</html>
+<!DOCTYPE hmtl>
+<hmtl lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nabocoin - Cadastro</title>
+        <link rel="stylesheet" href="../static/register.css">
+        <link rel="shortcut icon" type="image/jpg" href="../static/img/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <body>
+        <div style="text-align: right">
+            <img src="../static/img/icon.png" width="110" height="110">
+        </div>
+        <div class="parent">
+            <div class="container">
+                <div class="title">Nabocoin: Cadastro</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Nome de usuário</span>
+                            <input type="text" placeholder="Seu username" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Senha</span>
+                            <input type="password" placeholder="Sua senha" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirmar senha</span>
+                            <input type="password" placeholder="Repita sua senha" required>
+                        </div> 
+                        <div class="button">
+                            <input type="submit" value="Me cadastre!">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </body>
+</hmtl>
