@@ -4,7 +4,7 @@ from application.pages.login import loginpage
 from application.pages.register import registerpage
 from application.pages.user import userpage
 from application.pages.buy import buypage
-from application.api.dump import blockchain_json_dump
+from application.api.dump import blockchain_json_dump, Blockchain_api_dump
 
 app = Flask(__name__, template_folder='templates')
 
@@ -21,3 +21,8 @@ app.register_blueprint(registerpage)
 app.register_blueprint(userpage)
 app.register_blueprint(buypage)
 app.register_blueprint(blockchain_json_dump)
+
+from flask_restful import Api
+
+api = Api(app)
+api.add_resource(Blockchain_api_dump, '/api')
