@@ -1,4 +1,0 @@
-
-
-def hello():
-    return "HelloWorld!"
