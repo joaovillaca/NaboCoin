@@ -12,11 +12,11 @@
 </div>
 <br>
 
-Para testar o app em localhost:5000 basta executar o comando no repositório:
+Para criar um ambiente virtual para testar o aplicativo, execute o comando:
 ```bash
-    $ python run.py
+    $ python -m venv venv
 ```
-Ou usando o Flask environment:
+Depois crie a variável de ambiente FLASK_APP para que o Flask inicialize o app:
 (Linux/Bash):
 ```bash
     ~$ export FLASK_APP=run
