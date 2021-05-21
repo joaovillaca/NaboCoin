@@ -1,13 +1,13 @@
-<h1 style="text-align: center">Nabocoin</h1>
-<h2 style="text-align: center">O Blockchain-as-a-service mais simples que existe</h2>
+<h1 align="center">Nabocoin</h1>
+<h2 align="center">O Blockchain-as-a-service mais simples que existe</h2>
 
 
-<div style="text-align: center">
+<div align="center">
   <img src="https://github.com/zerodois-bcc/NaboCoin/blob/main/application/static/img/icon.png" width="350px" height="350px">
 </div>
-<div style="text-align: center">Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+<div align="center">Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
 <br>
-<div style="text-align: center">
+<div align="center">
 >Blockchain PoW (Proof-of-Work) simples
 </div>
 <br>
