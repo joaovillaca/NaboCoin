@@ -25,3 +25,21 @@ def register():
         return render_template('register.html', action=action, form=form)
     except TemplateNotFound:
         abort(404)
+
+@registerpage.route("/registersubmit", methods=['GET', 'POST'])
+def registersubmit():
+
+    action ="Cadastro"
+    form = RegistrationForm()
+
+    if request.method == 'POST' and form.validate():
+        user = UserAgentMixin(form.username.data, form.email.data, form.password.data)
+        flash('Thanks for registering' + ' ' + user)
+        try:
+            return redirect(url_for('loginpage.login'))
+        except TemplateNotFound:
+            abort(404)
+    try:
+        return render_template('registersubmit.html', action=action, form=form)
+    except TemplateNotFound:
+        abort(404)
