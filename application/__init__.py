@@ -5,6 +5,7 @@ from application.pages.register import registerpage
 from application.pages.user import userpage
 from application.pages.buy import buypage
 from application.api.dump import blockchain_json_dump, Blockchain_api_dump
+from datetime import timedelta
 
 app = Flask(__name__, template_folder='templates')
 
@@ -14,6 +15,7 @@ app = Flask(__name__, template_folder='templates')
 # >> secrets.token_hex(32)
 app.config['SECRET_KEY'] = 'e41ea80c121d9f8778579e53a29e31865739d4cf749b0cb1f04e2c629743a80f'
 
+app.permanent_session_lifetime = timedelta(days = 5)
 
 app.register_blueprint(homepage)
 app.register_blueprint(loginpage)
