@@ -15,6 +15,6 @@ setup(
     ],
     classifiers=[
         "Development Status :: Initial Mockup",
-        "License :: BSD License",
+        "License :: BSD 3-Clause License",
     ]
 )
