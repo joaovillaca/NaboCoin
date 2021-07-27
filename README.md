@@ -5,7 +5,7 @@ Alunos:
 - brunao
 - laurinha
 - luca botinha
-- carioca
+- bozzera
 - muketa
 - João Villaça 10724239
 - Matheus Populim 10734710
