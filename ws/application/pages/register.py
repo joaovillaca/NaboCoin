@@ -43,7 +43,3 @@ def registersubmit():
         return render_template('registersubmit.html', action=action, form=form)
     except TemplateNotFound:
         abort(404)
-
-# TODO: 
-# - front-end validar o form e mandar todas as informações já encriptadas com Bcrypt
-# - registrar os dados no RegistrationForm e passar o commit para o banco de dados

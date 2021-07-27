@@ -1,6 +1,1 @@
-**/__pycache__/**
-.vscode/*
-venv/*
-application.egg-info/*
-*.log
-build/*
+*.out

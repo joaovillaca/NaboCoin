@@ -11,7 +11,6 @@ def login():
 
     if request.method == "POST":
         user = request.form["login"]
-        session.permanent = True
         session["user"] = user
 
         try:

@@ -1,0 +1,22 @@
+bin/kafka-console-producer.sh --topic transaction --bootstrap-server localhost:9055
+
+
+bin/kafka-console-producer.sh --topic transaction --bootstrap-server 143.107.232.252:9055
+
+
+
+# delete topic
+delete.topic.enable=true
+bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic transaction
+
+
+bin/kafka-topics.sh --create --topic transaction --bootstrap-server 143.107.232.252:9055
+
+
+
+
+bin/kafka-console-consumer.sh --topic transaction --from-beginning --bootstrap-server 143.107.232.252:9055
+
+bin/kafka-console-consumer.sh --topic transaction --from-beginning --bootstrap-server localhost:9055
+
+sudo lsof -i -P -n | grep LISTEN

@@ -4,6 +4,12 @@ body{
 	color: black;
 }
 
+table{
+	overflow-y:scroll;
+	height:80vh;
+	display:block;
+ }
+
 .login-container{
 	background-color: #ccc;
 	text-align: center;

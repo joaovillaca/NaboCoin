@@ -1,3 +1,5 @@
+#módulo para a realização de um formulário
+
 from wtforms import BooleanField, StringField, PasswordField
 from wtforms.validators import DataRequired, EqualTo, InputRequired, Length, Email
 from flask_wtf import FlaskForm

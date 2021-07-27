@@ -22,6 +22,34 @@
 		<a class="button button2 right" href = "/login">Login</a>
 		<h1 style="text-align: center">Nabocoin</h1>
 	</div>
+	
+	<div>
+		<table style="width:80%">
+			<tr>
+			  <th>type</th>
+			  <th>remetente</th>
+			  <th>destinatario</th>
+			  <th>mensagem</th>
+			  <th>valor</th>
+			  <th>timestamp</th>
+			  <th>saldo_remetente</th>
+			  <th>saldo_destinatario</th>
+			</tr>
+		{% for item in transactions %}
+		<tr>
+			<td>{{ item["type"] }}</td>
+			<td>{{ item["remetente"] }}</td>
+			<td>{{ item["destinatario"] }}</td>
+			<td>{{ item["mensagem"] }}</td>
+			<td>{{ item["valor"] }}</td>
+			<td>{{ item["timestamp"] }}</td>
+			<td>{{ item["saldo_remetente"] }}</td>
+			<td>{{ item["saldo_destinatario"] }}</td>
+		</tr>
+		{% endfor %}
+		</table>
+	</div>
+
 	<h2 style="font-family: Arial; text-align: center">{{ message }}</h2>
 	<br>
 	<p style="font-family: Arial; text-align: center">{{ action }}</p>
