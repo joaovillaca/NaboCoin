@@ -1,11 +1,12 @@
-# Trabalho de Computação em Nuvem
-
-Esse projeto foi iniciado no https://github.com/zerodois-bcc/NaboCoin
-e transferido para cá.
+# Trabalho de Blockchain + Cloud
 
 Alunos:
 
-- Felipe Torres 9253670
+- brunao
+- laurinha
+- luca botinha
+- carioca
+- muketa
 - João Villaça 10724239
 - Matheus Populim 10734710
 
