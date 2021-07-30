@@ -2,7 +2,7 @@
 
 Alunos:
 
-- brunao
+- Bruno Gazoni 7585037
 - laurinha
 - luca botinha
 - bozzera
