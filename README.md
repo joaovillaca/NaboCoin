@@ -3,7 +3,7 @@
 Alunos:
 
 - Bruno Gazoni 7585037
-- laurinha
+- Laura Genari 10801180
 - luca botinha
 - bozzera
 - muketa
