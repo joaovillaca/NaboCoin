@@ -4,9 +4,9 @@ Alunos:
 
 - Bruno Gazoni 7585037
 - Laura Genari 10801180
-- luca botinha
+- Luca Bottino 9760300
 - Rafael Ceneme 9898610
-- muketa
+- Gabriel Tavares 11355831
 - João Villaça 10724239
 - Matheus Populim 10734710
 
